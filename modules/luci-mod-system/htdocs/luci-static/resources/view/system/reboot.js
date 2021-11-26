@@ -17,8 +17,8 @@ return view.extend({
 
 	render: function(changes) {
 		var body = E([
-			E('h2', _('Reboot')),
-			E('p', {}, _('Reboots the operating system of your device'))
+			E('h2', _('Reboot / Power Off')),
+			E('p', {}, _('Reboot or power off the operating system of your device'))
 		]);
 
 		for (var config in (changes || {})) {
@@ -33,6 +33,15 @@ return view.extend({
 			'click': ui.createHandlerFn(this, 'handleReboot')
 		}, _('Perform reboot')));
 
+		body.appendChild(E('hr'));
+		body.appendChild(E('button', {
+			'class': 'btn cbi-button cbi-button-apply important',
+			'click': ui.createHandlerFn(this, 'handlePowerOff')
+		}, _('Perform power off...'))
+
+			: E('p', { 'class' : 'alert-message warning'},
+			_('Warning: This system does not support powering off!'))
+		);
 		return body;
 	},
 
@@ -59,6 +68,33 @@ return view.extend({
 		.catch(function(e) { L.ui.addNotification(null, E('p', e.message)) });
 	},
 
+	callPowerOff: function() {
+		return fs.exec('/sbin/poweroff').then(function() {
+			ui.showModal(_('Shutting down...'), [
+				E('p', { 'class': 'spinning' }, _('The system is shutting down now.<br /> DO NOT POWER OFF THE DEVICE!<br /> It might be necessary to renew the address of your computer to reach the device again, depending on your settings.'))
+			]);
+		})
+	},
+
+	handlePowerOff: function() {
+
+		ui.showModal(_('Power Off Device'), [
+			E('p', _("WARNING: Power off might result in a reboot on a device which doesn't support power off.<br /><br />\
+			Click \"Proceed\" below to power off your device.")),
+			E('div', { 'class': 'right' }, [
+				E('button', {
+					'class': 'btn',
+					'click': ui.hideModal
+				}, _('Cancel')), ' ',
+				E('button', {
+					'class': 'btn cbi-button cbi-button-positive important',
+					'click': L.bind(this.callPowerOff, this)
+				}, _('Proceed'))
+			])
+		]);
+
+	},
+	
 	handleSaveApply: null,
 	handleSave: null,
 	handleReset: null
