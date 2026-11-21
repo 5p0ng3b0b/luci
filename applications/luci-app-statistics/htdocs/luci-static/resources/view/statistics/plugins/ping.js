@@ -6,8 +6,8 @@ return baseclass.extend({
 	title: _('Ping Plugin Configuration'),
 	description: _('The ping plugin will send icmp echo replies to selected hosts and measure the roundtrip time for each host.'),
 
-	addFormOptions: function(s) {
-		var o;
+	addFormOptions(s) {
+		let o;
 
 		o = s.option(form.Flag, 'enable', _('Enable this plugin'));
 
@@ -34,15 +34,15 @@ return baseclass.extend({
 		o.depends('enable', '1');
 
 	    o=s.option(form.Value,'MaxMissed',_('Maximum Missed Packets'),
-		       _('When a host has not replied to this number of packets in a row, re-resolve the hostname in DNS.  Useful for dynamic DNS hosts.'));
-		o.placeholder = '10';
-		o.datatype = 'uinteger';
+		       _('When a host has not replied to this number of packets in a row, re-resolve the hostname in DNS.  Useful for dynamic DNS hosts.  Default is -1 = disabled.'));
+		o.placeholder = '-1';
+		o.datatype = 'and(min(-1),integer)'
 		o.optional = true;
 		o.depends('enable', '1');
 	},
 
-	configSummary: function(section) {
-		var hosts = L.toArray(section.Hosts);
+	configSummary(section) {
+		const hosts = L.toArray(section.Hosts);
 
 		if (hosts.length)
 			return N_(hosts.length, 'Monitoring one host', 'Monitoring %d hosts').format(hosts.length);

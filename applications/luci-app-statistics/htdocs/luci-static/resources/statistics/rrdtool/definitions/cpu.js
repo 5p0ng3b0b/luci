@@ -7,18 +7,18 @@
 return baseclass.extend({
 	title: _('Processor'),
 
-	rrdargs: function(graph, host, plugin, plugin_instance, dtype) {
-		var p = [];
+	rrdargs(graph, host, plugin, plugin_instance, dtype) {
+		let p = [];
 
-		var title = "%H: Processor usage";
+		let title = "%H: Processor usage";
 
 		if (plugin_instance != '')
 			title = "%H: Processor usage on core #%pi";
 
-		var show_idle = uci.get("luci_statistics", "collectd_cpu", "ShowIdle") == "1" ? true : false;
+		const show_idle = uci.get("luci_statistics", "collectd_cpu", "ShowIdle") == "1" ? true : false;
 
 		if (uci.get("luci_statistics", "collectd_cpu", "ReportByState") == "1") {
-			var cpu = {
+			const cpu = {
 				title: title,
 				y_min: "0",
 				alt_autoscale_max: true,
@@ -28,13 +28,13 @@ return baseclass.extend({
 					instances: {
 						cpu: [
 							...(show_idle ? ["idle"] : []),
-							"interrupt",
 							"nice",
-							"softirq",
-							"steal",
-							"system",
 							"user",
-							"wait"
+							"wait",
+							"system",
+							"softirq",
+							"interrupt",
+							"steal"
 						]
 					},
 					options: {
@@ -68,15 +68,16 @@ return baseclass.extend({
 						},
 						cpu_wait: {
 							color: "ffb000",
-							title: "Wait"
+							title: "Wait I/O"
 						}
 					}
 				}
 			};
 
-			var percent = {
+			const percent = {
 				title: title,
 				y_min: "0",
+				y_max: "2",
 				alt_autoscale_max: true,
 				vlabel: "Percent",
 				number_format: "%5.1lf%%",
@@ -84,13 +85,13 @@ return baseclass.extend({
 					instances: {
 						percent: [
 							...(show_idle ? ["idle"] : []),
-							"interrupt",
 							"nice",
-							"softirq",
-							"steal",
-							"system",
 							"user",
-							"wait"
+							"wait",
+							"system",
+							"softirq",
+							"interrupt",
+							"steal"
 						]
 					},
 					options: {
@@ -124,24 +125,25 @@ return baseclass.extend({
 						},
 						percent_wait: {
 							color: "ffb000",
-							title: "Wait"
+							title: "Wait I/O"
 						}
 					}
 				}
 			};
 
-			var types = graph.dataTypes(host, plugin, plugin_instance);
+			const types = graph.dataTypes(host, plugin, plugin_instance);
 
-			for (var i = 0; i < types.length; i++)
-				if (types[i] == 'cpu')
+			for (let type of types)
+				if (type == 'cpu')
 					p.push(cpu);
-				else if (types[i] == 'percent')
+				else if (type == 'percent')
 					p.push(percent);
 		}
 		else {
 			p = {
 				title: title,
 				y_min: "0",
+				y_max: "2",
 				alt_autoscale_max: true,
 				vlabel: "Percent",
 				number_format: "%5.1lf%%",

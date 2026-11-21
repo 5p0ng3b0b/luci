@@ -19,7 +19,28 @@
 			"path": "status/routes"
 		},
 		"depends": {
-			"acl": [ "luci-mod-status-routes" ]
+			"acl": [ "luci-mod-status-routes" ],
+			"fs": [
+				{ "/usr/libexec/ip-tiny": "absent", "/usr/libexec/ip-full": "absent" }
+			]
+
+		}
+	},
+
+	"admin/status/routesj": {
+		"title": "Routing",
+		"order": 2,
+		"action": {
+			"type": "view",
+			"path": "status/routesj"
+		},
+		"depends": {
+			"acl": [ "luci-mod-status-routes-json" ],
+			"fs": [
+				{ "/usr/libexec/ip-tiny": "executable" },
+				{ "/usr/libexec/ip-full": "executable" }
+			]
+
 		}
 	},
 
@@ -31,7 +52,31 @@
 			"path": "status/iptables"
 		},
 		"depends": {
-			"acl": [ "luci-mod-status-firewall" ]
+			"acl": [ "luci-mod-status-firewall" ],
+			"fs": [
+				{ "/usr/sbin/nft": "absent", "/usr/sbin/iptables": "executable" },
+				{ "/usr/sbin/nft": "absent", "/usr/sbin/ip6tables": "executable" }
+			]
+		}
+	},
+
+	"admin/status/nftables": {
+		"title": "Firewall",
+		"order": 3,
+		"action": {
+			"type": "view",
+			"path": "status/nftables"
+		},
+		"depends": {
+			"acl": [ "luci-mod-status-firewall" ],
+			"fs": { "/usr/sbin/nft": "executable" }
+		}
+	},
+
+	"admin/status/nftables/iptables": {
+		"action": {
+			"type": "view",
+			"path": "status/iptables"
 		}
 	},
 
@@ -112,7 +157,7 @@
 	},
 
 	"admin/status/realtime/bandwidth": {
-		"title": "Traffic",
+		"title": "Bandwidth",
 		"order": 2,
 		"action": {
 			"type": "view",

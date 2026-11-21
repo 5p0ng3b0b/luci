@@ -1,223 +1,661 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-10-26 14:59+0000\n"
-"Last-Translator: Darin  Avdeyeva <yulyablack@inbox.lv>\n"
+"PO-Revision-Date: 2026-10-16 06:44+0000\n"
+"Last-Translator: SnIPeRSnIPeR <snipersniper@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "lucimodulesluci-mod-dashboard/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:163
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:99
+msgid "%d clients"
+msgstr "Клиентов: %d"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:89
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:124
+msgid "%d core"
+msgid_plural "%d cores"
+msgstr[0] "%d ядро"
+msgstr[1] "%d ядра"
+msgstr[2] "%d ядер"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/charts.js:310
+msgid "%d min ago"
+msgstr "%d мин назад"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:74
+msgid "%d of %d SSIDs active"
+msgstr "Активных SSID: %d из %d"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/charts.js:310
+msgid "%d s ago"
+msgstr "%d сек назад"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:108
+msgid "15 min: %.2f"
+msgstr "15 мин: %.2f"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:108
+msgid "5 min: %.2f"
+msgstr "5 мин: %.2f"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:324
 msgid "Active"
-msgstr "Активный"
+msgstr "Активно"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:306
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:40
+msgid "Active leases"
+msgstr "Активные DHCP-аренды"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:295
 msgid "Architecture"
 msgstr "Архитектура"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:181
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:342
 msgid "BSSID"
 msgstr "BSSID"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:175
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:243
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:220
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:374
+msgid "Band"
+msgstr "Диапазон"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:336
 msgid "Bitrate"
 msgstr "Битрейт"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:169
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:234
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:175
+msgid "Buffered"
+msgstr "Буферизовано"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:143
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:168
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:303
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:14
+msgid "CPU"
+msgstr "ЦП"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:43
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:87
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:164
+msgid "CPU usage"
+msgstr "Загрузка ЦП"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:178
+msgid "Cached"
+msgstr "Кэшировано"
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:53
+msgid "Center"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:330
 msgid "Channel"
 msgstr "Канал"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:175
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:215
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:44
+msgid "Chassis"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/history.js:56
+msgid "Collecting data..."
+msgstr "Сбор данных..."
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:313
+msgid "Component"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:72
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:104
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:164
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:204
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:171
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:223
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:420
 msgid "Connected"
-msgstr "Подключен"
+msgstr "Подключён"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:181
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:221
-msgid "Connected since"
-msgstr "Подключено с"
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:31
+msgid "DDR"
+msgstr ""
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:13
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:14
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:19
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:20
 msgid "DHCP Devices"
 msgstr "Устройства DHCP"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:205
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:194
 msgid "DNSv4"
 msgstr "DNSv4"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:251
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:240
 msgid "DNSv6"
 msgstr "DNSv6"
 
 #: modules/luci-mod-dashboard/root/usr/share/luci/menu.d/luci-mod-dashboard.json:3
 msgid "Dashboard"
-msgstr "Панель мониторинга"
+msgstr "Информационная панель"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:134
-msgid "Devices"
-msgstr "Устройства"
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/layout.js:52
+msgid "Detail tabs"
+msgstr "Вкладки подробностей"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:193
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:354
 msgid "Devices Connected"
-msgstr "Подключенные устройства"
+msgstr "Подключённые устройства"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:86
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:222
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:242
 msgid "Down."
 msgstr "Скач."
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:129
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/15_traffic.js:68
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:170
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:179
 msgid "Download"
-msgstr "Скачать"
+msgstr "Отдача"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:187
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:348
 msgid "Encryption"
 msgstr "Шифрование"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:311
-msgid "Firmware Version"
-msgstr "Версия прошивки"
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:33
+msgid "Ethernet"
+msgstr ""
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:171
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:55
+msgid "FMan"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:300
+msgid "Firmware Version"
+msgstr "Версия встроенного ПО"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:274
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:332
 msgid "GHz"
 msgstr "ГГц"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:199
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:38
+msgid "GPU"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:188
 msgid "GatewayV4"
 msgstr "GatewayV4"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:245
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:234
 msgid "GatewayV6"
 msgstr "GatewayV6"
 
-#: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:25
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:41
+msgid "GbE"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/charts.js:26
+msgid "Gbit/s"
+msgstr "Гбит/с"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:113
+msgid "Good"
+msgstr "Хороший"
+
+#: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:32
 msgid "Grant access to DHCP status display"
 msgstr "Предоставить доступ к просмотру состояния DHCP"
 
 #: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:12
 msgid "Grant access to main status display"
-msgstr "Предоставить доступ к отображению основного состояния"
+msgstr "Предоставить доступ к главной странице состояния"
 
 #: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:3
 msgid "Grant access to the system route status"
 msgstr "Предоставить доступ к состоянию системных маршрутов"
 
-#: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:34
+#: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:41
 msgid "Grant access to wireless status display"
 msgstr "Предоставить доступ к просмотру состояния беспроводных сетей"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:30
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:83
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:222
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:47
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:217
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:380
 msgid "Hostname"
-msgstr "Имя"
+msgstr "Имя хоста"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:31
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:47
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:218
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:386
 msgid "IP Address"
 msgstr "IP-адрес"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:193
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:114
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:182
 msgid "IPv4"
 msgstr "IPv4"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:172
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:161
 msgid "IPv4 Internet"
-msgstr "IPv4 Интернет"
+msgstr "IPv4-Интернет"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:239
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:228
 msgid "IPv6"
 msgstr "IPv6"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:212
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:201
 msgid "IPv6 Internet"
-msgstr "IPv6 Интернет"
+msgstr "IPv6-Интернет"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:233
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:222
 msgid "IPv6 prefix"
 msgstr "Префикс IPv6"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:33
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:208
+msgid "Interface is disabled"
+msgstr "Интерфейс отключён"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:21
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:23
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:103
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:316
 msgid "Internet"
 msgstr "Интернет"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:296
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/charts.js:26
+msgid "Kbit/s"
+msgstr "Кбит/с"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:285
 msgid "Kernel Version"
 msgstr "Версия ядра"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:291
-msgid "Local Time"
-msgstr "Время"
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:30
+msgid "LPASS"
+msgstr ""
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:32
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/layout.js:51
+msgid "Live charts"
+msgstr "Графики в реальном времени"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:45
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:106
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:156
+msgid "Load average"
+msgstr "Средняя нагрузка"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/index.js:308
+msgid "Loading view…"
+msgstr "Загрузка страницы…"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:280
+msgid "Local Time"
+msgstr "Системное время"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:47
 msgid "MAC"
 msgstr "MAC"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:119
-msgid "Mac"
-msgstr "Mac"
-
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:177
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:338
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/charts.js:26
 msgid "Mbit/s"
 msgstr "Мбит/с"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:301
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:44
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:97
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:144
+msgid "Memory"
+msgstr "Память"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:172
+msgid "Memory used"
+msgstr "Использовано памяти"
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:52
+msgid "Misc"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:290
 msgid "Model"
 msgstr "Модель"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:151
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:158
-msgid "Not connected"
-msgstr "Не подключен"
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:29
+msgid "Modem"
+msgstr ""
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:187
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:227
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:39
+msgid "NPU"
+msgstr ""
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:28
+msgid "NSS"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:121
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:233
+msgid "No RX signal"
+msgstr "Нет сигнала RX"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:40
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:53
+msgid "No active leases"
+msgstr "Нет активных DHCP-аренд"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/15_traffic.js:73
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/history.js:56
+msgid "No data received"
+msgstr "Данные не получены"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:283
+msgid "No supported temperature sensors found"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:90
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:115
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:182
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:246
+msgid "No wireless clients connected"
+msgstr "Нет подключённых беспроводных клиентов"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:221
+msgid "Noise floor"
+msgstr "Уровень шума"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:74
+msgid "Not configured or no address acquired"
+msgstr "Не настроено или адрес не получен"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:72
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:104
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:140
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:147
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/15_traffic.js:74
+msgid "Not connected"
+msgstr "Не подключён"
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:43
+msgid "PHY"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:290
+msgid "Processor temperature unavailable"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:176
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:216
 msgid "Protocol"
 msgstr "Протокол"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:157
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:228
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:50
+msgid "RFA"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:294
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:310
+msgid "Reading age: %d seconds"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:47
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:204
+msgid "Resources"
+msgstr "Ресурсы"
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:56
+msgid "SEC"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:219
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:318
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:392
 msgid "SSID"
 msgstr "SSID"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:85
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/layout.js:115
+msgid "Save & Apply"
+msgstr "Сохранить и применить"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:190
+msgid "Select at least one sensor."
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:191
+msgid "Select no more than %d sensors."
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:268
+msgid "Selected temperature sensors are unavailable"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:97
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:102
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:313
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:57
+msgid "Sensor"
+msgstr ""
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:54
+msgid "SerDes"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/index.js:261
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/index.js:308
+msgid "Settings"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:221
 msgid "Signal"
 msgstr "Сигнал"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:33
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:35
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:98
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:398
+msgid "Signal Strength"
+msgstr "Уровень сигнала"
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:22
+msgid "SoC"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:311
+msgid "Some temperature sensors are unavailable"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/layout.js:50
+msgid "Status cards"
+msgstr "Карточки состояния"
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:37
+msgid "Storage"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:182
+msgid "Swap used"
+msgstr "Использовано подкачки"
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:46
+msgid "Switch"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:24
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:317
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:45
 msgid "System"
 msgstr "Система"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:86
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:46
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:131
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:139
+msgid "System load"
+msgstr "Системная нагрузка"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:87
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:302
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:313
+msgid "Temperature"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:88
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:172
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:208
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:225
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:263
+msgid "Temperature history"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:267
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:283
+msgid "Temperature temporarily unavailable"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:89
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:309
+msgid "Temperatures"
+msgstr ""
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:51
+msgid "Top Glue"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:54
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:247
+msgid "Total"
+msgstr "Всего"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:162
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:409
+msgid "Transferred"
+msgstr "Передано"
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:48
+msgid "UBI"
+msgstr ""
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:49
+msgid "UBI32"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/13_temperature.js:189
+msgid "Unavailable"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:222
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:240
 msgid "Up."
 msgstr "Загр."
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:124
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/15_traffic.js:69
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:170
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:180
 msgid "Upload"
 msgstr "Загрузить"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:286
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:22
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:170
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:210
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:275
 msgid "Uptime"
 msgstr "Время работы"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:9
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:84
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:40
+msgid "VE"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/15_traffic.js:39
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/15_traffic.js:41
+msgid "WAN traffic"
+msgstr "Трафик WAN"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/15_traffic.js:74
+msgid "Waiting for a new sample..."
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:114
+msgid "Weak"
+msgstr "Слабый"
+
+#: modules/luci-mod-dashboard/root/usr/share/ucode/luci/dashboard/temperature.uc:24
+msgid "Wi-Fi"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:28
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:37
 msgid "Wireless"
 msgstr "Беспроводная сеть"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:67
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:65
-msgid "no"
-msgstr "нет"
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:36
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:161
+msgid "Wireless client data usage"
+msgstr "Использование данных беспроводными клиентами"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:67
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:65
-msgid "yes"
-msgstr "да"
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:34
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:86
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:89
+msgid "Wireless client distribution"
+msgstr "Распределение беспроводных клиентов"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:33
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:72
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:290
+msgid "Wireless clients"
+msgstr "Беспроводные клиенты"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/charts.js:26
+msgid "bit/s"
+msgstr "бит/с"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:87
+msgid "by SSID"
+msgstr "по SSID"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:89
+msgid "clients"
+msgstr "клиенты"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:99
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:113
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:114
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:123
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:126
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:233
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:236
+msgid "dBm"
+msgstr "дБм"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/12_resources.js:89
+msgid "load %.2f"
+msgstr "нагрузка %.2f"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/lib/charts.js:339
+msgid "now"
+msgstr "сейчас"
+
+#~ msgid "Layout"
+#~ msgstr "Макет"
+
+#~ msgid ""
+#~ "The lists follow the page from top to bottom. What is in a list is shown, "
+#~ "in that order: drag an entry to move it. An empty list shows the defaults."
+#~ msgstr ""
+#~ "Списки идут сверху вниз по странице. Содержимое списка отображается в "
+#~ "этом порядке: перетащите элемент, чтобы изменить его положение. Пустой "
+#~ "список означает использование значений по умолчанию."
+
+#~ msgid "Strength"
+#~ msgstr "Уровень"
+
+#~ msgid "no"
+#~ msgstr "нет"
+
+#~ msgid "yes"
+#~ msgstr "да"
+
+#~ msgid "Devices"
+#~ msgstr "Устройства"
+
+#~ msgid "Mac"
+#~ msgstr "Mac"

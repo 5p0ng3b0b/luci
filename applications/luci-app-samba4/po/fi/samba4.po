@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-03-22 15:23+0100\n"
-"PO-Revision-Date: 2020-06-02 06:42+0000\n"
-"Last-Translator: Petri Asikainen <uniluodossa@gmail.com>\n"
+"PO-Revision-Date: 2025-05-04 15:03+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssamba4/fi/>\n"
 "Language: fi\n"
@@ -12,37 +12,39 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:120
 msgid "Allow guests"
-msgstr ""
+msgstr "Salli vieraat"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:67
 msgid "Allow legacy (insecure) protocols/authentication."
-msgstr ""
+msgstr "Salli vanhat (suojaamattomat) protokollat/todennus."
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:68
 msgid ""
 "Allow legacy smb(v1)/Lanman connections, needed for older devices without "
 "smb(v2.1/3) support."
 msgstr ""
+"Salli vanhat smb(v1)/Lanman-yhteydet, joita tarvitaan vanhemmille laitteille "
+"ilman smb(v2.1/3)-tukea."
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:117
 msgid "Allowed users"
-msgstr ""
+msgstr "Sallitut käyttäjät"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:151
 msgid "Apple Time-machine share"
-msgstr ""
+msgstr "Apple Time Machine -jako"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:104
 msgid "Browse-able"
-msgstr ""
+msgstr "Selattavissa"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:136
 msgid "Create mask"
-msgstr ""
+msgstr "Luo maski"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:54
 msgid "Description"
@@ -50,35 +52,35 @@ msgstr "Kuvaus"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:142
 msgid "Directory mask"
-msgstr ""
+msgstr "Hakemiston peite"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:74
 msgid "Disable Active Directory Domain Controller"
-msgstr ""
+msgstr "Poista käytöstä Active Directoryn DC (toimialueohjain)"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:71
 msgid "Disable Netbios"
-msgstr ""
+msgstr "Poista käytöstä Netbios"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:77
 msgid "Disable Winbind"
-msgstr ""
+msgstr "Poista käytöstä Winbind"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:32
 msgid "Edit Template"
-msgstr ""
+msgstr "Muokkaa mallipohjaa"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:32
 msgid "Edit the template that is used for generating the samba configuration."
-msgstr ""
+msgstr "Muokkaa samba-määritysten luomiseen käytettävää mallipohjaa."
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:57
 msgid "Enable extra Tuning"
-msgstr ""
+msgstr "Ota ylimääräinen viritys käyttöön"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:64
 msgid "Enable macOS compatible shares"
-msgstr ""
+msgstr "Ota käyttöön macOS-yhteensopivat jaot"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:58
 msgid ""
@@ -86,44 +88,51 @@ msgid ""
 "speeds and better operation via WiFi. Not recommend if multiple clients "
 "write to the same files, at the same time!"
 msgstr ""
+"Ota käyttöön yhteisön määrittämiä säätöparametreja, jotka voivat parantaa "
+"kirjoitusnopeuksia ja toimintaa Wi-Fi-yhteyden välityksellä. Ei suositella, "
+"jos useat asiakkaat kirjoittavat samoihin tiedostoihin samanaikaisesti!"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:65
 msgid ""
 "Enables Apple's AAPL extension globally and adds macOS compatibility options "
 "to all shares."
 msgstr ""
+"Ottaa Applen AAPL-laajennuksen yleisesti käyttöön ja lisää macOS-"
+"yhteensopivuusvaihtoehdot kaikkiin jaettuihin jakoihin."
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:115
 msgid "Force Root"
-msgstr ""
+msgstr "Pakota Root"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:61
 msgid "Force synchronous I/O"
-msgstr ""
+msgstr "Pakota synkroninen I/O"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:31
 msgid "General Settings"
-msgstr "Yleisasetukset"
+msgstr "Yleiset asetukset"
 
 #: applications/luci-app-samba4/root/usr/share/rpcd/acl.d/luci-app-samba4.json:3
 msgid "Grant access to LuCI app samba4"
-msgstr ""
+msgstr "Myönnä pääsy LuCI-sovelluksen samba4:lle"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:126
 msgid "Guests only"
-msgstr ""
+msgstr "Vain vieraat"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:131
 msgid "Inherit owner"
-msgstr ""
+msgstr "Peri omistaja"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:34
 msgid "Interface"
-msgstr "Sovitin"
+msgstr "Liitäntä"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:35
 msgid "Listen only on the given interface or, if unspecified, on lan"
 msgstr ""
+"Kuuntele vain annetulla liitännälllä tai, jos sitä ei ole määritetty, "
+"lähiverkossa (LAN)"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:98
 msgid "Name"
@@ -132,31 +141,35 @@ msgstr "Nimi"
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:23
 #: applications/luci-app-samba4/root/usr/share/luci/menu.d/luci-app-samba4.json:3
 msgid "Network Shares"
-msgstr ""
+msgstr "Verkkojaot"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:62
 msgid ""
-"On lower-end devices may increase speeds, by forceing synchronous I/O "
-"instead of the default asynchronous."
+"On lower-end devices may increase speeds, by forcing synchronous I/O instead "
+"of the default asynchronous."
 msgstr ""
+"Alhaisemmissa laitteissa nopeuksia voidaan lisätä pakottamalla synkroninen "
+"syöttö/lähtö oletusasynkronisen sijaan."
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:99
 msgid "Path"
-msgstr ""
+msgstr "Polku"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:94
 msgid ""
 "Please add directories to share. Each directory refers to a folder on a "
 "mounted device."
 msgstr ""
+"Lisää hakemistoja jaettavaksi. Jokainen hakemisto viittaa kansioon "
+"liitetyllä laitteella."
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:109
 msgid "Read-only"
-msgstr ""
+msgstr "Vain luku"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:93
 msgid "Shared Directories"
-msgstr ""
+msgstr "Jaetut hakemistot"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:82
 msgid ""
@@ -165,32 +178,18 @@ msgid ""
 "('|') should not be changed. They get their values from the 'General "
 "Settings' tab."
 msgstr ""
+"Tämä on tiedoston '/etc/samba/smb.conf.template' sisältö, josta Samba-"
+"kokoonpanosi luodaan. Pystyviivojen ('|') sisällä olevia arvoja ei tule "
+"muuttaa. Ne hakevat arvonsa 'Yleiset asetukset' -välilehdeltä."
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:153
 msgid "Time-machine size in GB"
-msgstr ""
+msgstr "Time Machinen koko gigatavuissa"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:148
 msgid "Vfs objects"
-msgstr ""
+msgstr "Vfs-objektit"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:51
 msgid "Workgroup"
-msgstr ""
-
-#~ msgid ""
-#~ "Allow system users to reach their home directories via network shares"
-#~ msgstr ""
-#~ "Allow system users to reach their home directories via network shares"
-
-#~ msgid "Hostname"
-#~ msgstr "Hostname"
-
-#~ msgid "Share home-directories"
-#~ msgstr "Share home-directories"
-
-#~ msgid "Mask for new directories"
-#~ msgstr "Mask for new directories"
-
-#~ msgid "Mask for new files"
-#~ msgstr "Mask for new files"
+msgstr "Työryhmä"
