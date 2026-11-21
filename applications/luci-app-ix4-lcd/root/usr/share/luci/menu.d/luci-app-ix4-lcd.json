@@ -1,0 +1,28 @@
+{
+	"admin/system/ix4-lcd": {
+		"title": "LCD Configuration",
+		"order": 65,
+		"action": {
+			"type": "view",
+			"path": "ix4-lcd"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-ix4-lcd"
+			]
+		}
+	},
+	"admin/system/shutdown": {
+		"title": "Shutdown",
+		"order": 91,
+		"action": {
+			"type": "view",
+			"path": "ix4-shutdown"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-ix4-lcd"
+			]
+		}
+	}
+}

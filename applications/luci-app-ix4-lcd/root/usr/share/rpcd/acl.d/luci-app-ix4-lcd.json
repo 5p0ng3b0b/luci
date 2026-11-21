@@ -1,0 +1,95 @@
+{
+	"luci-app-ix4-lcd": {
+		"description": "Grant access to ix4-lcd configuration, bitmaps, and live sensors",
+		"read": {
+			"file": {
+				"/etc/ix4-lcd/*": [
+					"list",
+					"read"
+				],
+				"/proc/uptime": [
+					"read"
+				],
+				"/proc/loadavg": [
+					"read"
+				],
+				"/proc/meminfo": [
+					"read"
+				],
+				"/proc/mdstat": [
+					"read"
+				],
+				"/sys/class/hwmon/*": [
+					"list",
+					"read"
+				],
+				"/sys/class/net/*": [
+					"list",
+					"read"
+				],
+				"/sys/class/leds/*/brightness": [
+					"read"
+				],
+				"/sys/devices/platform/gpio-leds/leds/ix4-300d:sys:blue/brightness": [
+					"read"
+				],
+				"/sys/devices/platform/gpio-leds/leds/ix4-300d:sysfail:red/brightness": [
+					"read"
+				],
+				"/sys/devices/platform/gpio-leds/leds/ix4-300d:hdd:blue/brightness": [
+					"read"
+				],
+				"/sys/devices/platform/gpio-leds/leds/ix4-300d:hddfail:red/brightness": [
+					"read"
+				],
+				"/sys/devices/platform/gpio-leds/leds/ix4-300d:power:white/brightness": [
+					"read"
+				],
+				"/sys/class/net/*/carrier": [
+					"read"
+				],
+				"/sys/class/net/*/operstate": [
+					"read"
+				],
+				"/sys/devices/platform/soc/soc:internal-regs/f1070000.ethernet/net/eth0/carrier": [
+					"read"
+				],
+				"/sys/devices/platform/soc/soc:internal-regs/f1074000.ethernet/net/eth1/carrier": [
+					"read"
+				]
+			},
+			"uci": [
+				"ix4-lcd",
+				"system"
+			],
+			"ubus": {
+				"network.interface": [
+					"dump"
+				]
+			}
+		},
+		"write": {
+			"file": {
+				"/etc/ix4-lcd/*": [
+					"write",
+					"remove"
+				],
+				"/sbin/reboot": [
+					"exec"
+				],
+				"/sbin/poweroff": [
+					"exec"
+				]
+			},
+			"ubus": {
+				"service": [
+					"event",
+					"signal"
+				]
+			},
+			"uci": [
+				"ix4-lcd"
+			]
+		}
+	}
+}
